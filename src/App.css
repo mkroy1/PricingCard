@@ -1,0 +1,155 @@
+.App {
+    text-align: center;
+    background-color: blue;
+  }
+  
+  body {
+    background-image: url(./desktop-bg.jpg);
+    margin: 40px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #6af3f3 30%,
+      #fdfd5ef7 39%,
+      #d87dfcd0 17%,
+      #ffffff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: rgb(255, 255, 255);
+    background-clip: text;
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    --bs-btn-active-bg: #0a58ca;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200%;
+    }
+  }
+  
+  #title {
+    font-size: 2rem;
+    position: relative;
+    bottom: 20px;
+  }
+  
+  .container {
+    position: relative;
+    bottom: 40px;
+    border-radius: 20px;
+    background-color: lightblue;
+    width: 360px;
+    height: 570px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 0px;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .container:hover {
+    /* margin-top: -0.25rem;
+    margin-bottom: 0.25rem; */
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(34, 188, 183, 0.947);
+  }
+  
+  .headers {
+    font-weight: bold;
+    font-size: 25px;
+    color: lightslategray;
+  }
+  
+  .sub-headers {
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  
+  ul {
+    list-style-type: none;
+    text-align: start;
+  }
+  
+  li {
+    padding: 10px;
+    font-family: "Kalam", cursive;
+    letter-spacing: 1px;
+  }
+  
+  span {
+    font-weight: lighter;
+    font-size: 17px;
+  }
+  
+  b {
+    font-size: large;
+  }
+  
+  .footer-btn {
+    width: 300px;
+    height: 50px;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    background-color: #0a58ca;
+  }
+  
+  button {
+    position: relative;
+    font-size: 1.2em;
+    padding: 0.7em 1.4em;
+    background-color: hsl(141, 96%, 38%);
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5em;
+    color:white;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+  }
+  
+  button::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(33, 33, 33, 1) 0%,
+      rgba(33, 33, 33, 1) 50%,
+      rgba(150, 4, 31, 1) 50%,
+      rgba(191, 4, 38, 1) 60%
+    );
+    border-radius: 0 0 0.5em 0;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    color: black;
+  }
+  
+  button:hover::before {
+    width: 1.6em;
+    height: 1.6em;
+  }
+  
+  button:active {
+    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+    transform: translate(0.1em, 0.1em);
+    background-color: #5b85ef;
+  }
